@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MJ Accordion Demo</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="mjAccordion/mjAccordion.css" />
+</head>
+<body>
+
+	<div class="container py-5">
+		
+		<h1>MJ Form Validation</h1>
+
+		<fieldset class="wow fadeIn mb-5"><legend>Default Functionality</legend>
+			<ul class="nav nav-tabs" role="tablist">
+			 	<li class="nav-item"><a class="nav-link active" role="tab" href="#tab_preview" data-toggle="tab">Preview</a></li>
+			 	<li class="nav-item"><a class="nav-link" role="tab" href="#tab_html" data-toggle="tab">HTML</a></li>
+			 	<li class="nav-item"><a class="nav-link" role="tab" href="#tab_javascript" data-toggle="tab">JavaScript</a></li>
+			 	<li class="nav-item"><a class="nav-link" role="tab" href="#tab_css" data-toggle="tab">CSS</a></li>
+			</ul>
+			<div class="tab-content">
+			<div id="tab_preview" class="tab-pane fade show active p-3 bg-white border-right border-bottom border-left" role="tabpanel">
+			<ul id="myAccordion" class="mj_accordion">
+			 	<li>
+			<div class="mj_accordion_item active">Accordion Item #1</div>
+			<div class="mj_accordion_content active">Content 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit autem sequi perferendis asperiores quidem id sunt officiis molestias nobis. Sint, veritatis, quis voluptates totam sed quod quidem placeat iusto.</div></li>
+			 	<li>
+			<div class="mj_accordion_item">Accordion Item #2</div>
+			<div class="mj_accordion_content">Content 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nesciunt, accusantium, ad nam officia illum officiis accusamus veniam similique eligendi laborum saepe sed beatae dolores totam suscipit quis corporis qui.</div></li>
+			 	<li>
+			<div class="mj_accordion_item">Accordion Item #3</div>
+			<div class="mj_accordion_content">Content 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem, aspernatur iure enim consequatur delectus et nam ratione laboriosam commodi id doloribus dicta odio a nemo numquam consectetur eligendi officia.</div></li>
+			</ul>
+			</div>
+			<div id="tab_html" class="tab-pane fade p-3 bg-white border-right border-bottom border-left" role="tabpanel">
+<pre>&lt;ul class="mj_accordion" id="myAccordion"&gt;
+    &lt;li&gt;
+        &lt;div class="mj_accordion_item active"&gt;Accordion Item #1&lt;/div&gt;
+        &lt;div class="mj_accordion_content active"&gt;Content 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit autem sequi perferendis asperiores quidem id sunt officiis molestias nobis. Sint, veritatis, quis voluptates totam sed quod quidem placeat iusto.&lt;/div&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+        &lt;div class="mj_accordion_item"&gt;Accordion Item #2&lt;/div&gt;
+        &lt;div class="mj_accordion_content"&gt;Content 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nesciunt, accusantium, ad nam officia illum officiis accusamus veniam similique eligendi laborum saepe sed beatae dolores totam suscipit quis corporis qui.&lt;/div&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+        &lt;div class="mj_accordion_item"&gt;Accordion Item #3&lt;/div&gt;
+        &lt;div class="mj_accordion_content"&gt;Content 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem, aspernatur iure enim consequatur delectus et nam ratione laboriosam commodi id doloribus dicta odio a nemo numquam consectetur eligendi officia.&lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</pre>
+			</div>
+			<div id="tab_javascript" class="tab-pane fade p-3 bg-white border-right border-bottom border-left" role="tabpanel">
+<pre>&lt;script type="text/javascript"&gt;
+$(function(){
+    $('#myAccordion').mjAccordion();
+});
+&lt;/script&gt;</pre>
+			</div>
+			<div id="tab_css" class="tab-pane fade p-3 bg-white border-right border-bottom border-left" role="tabpanel">
+<pre>.mj_accordion {padding:0; margin:0 0 .5em;}
+.mj_accordion &gt; li {list-style:none;}
+.mj_accordion &gt; li:first-child .mj_accordion_item {margin-top:0;}
+.mj_accordion .mj_accordion_item {cursor:pointer; color:#333; background:#f5f5f5; border:1px solid #ddd; padding:10px 15px; -webkit-border-radius:3px; border-radius:3px; font-size:16px; margin-top:.3em;}
+.mj_accordion .mj_accordion_item:hover {background:#eee;}
+.mj_accordion .mj_accordion_item.active {border-bottom:none; -webkit-border-radius:3px 3px 0 0; border-radius:3px 3px 0 0;}
+.mj_accordion .mj_accordion_content {padding:15px; border:1px solid #ddd; display:none; -webkit-border-radius:0 0 3px 3px; border-radius:0 0 3px 3px; background:#fff;}
+.mj_accordion .mj_accordion_content.active {display:block; height:inherit;}</pre>
+			</div>
+			</div></fieldset>
+			<fieldset class="wow fadeIn"><legend>Enable Toggle Option</legend>
+			<ul class="nav nav-tabs" role="tablist">
+			 	<li class="nav-item"><a class="nav-link active" role="tab" href="#tab_preview2" data-toggle="tab">Preview</a></li>
+			 	<li class="nav-item"><a class="nav-link" role="tab" href="#tab_html2" data-toggle="tab">HTML</a></li>
+			 	<li class="nav-item"><a class="nav-link" role="tab" href="#tab_javascript2" data-toggle="tab">JavaScript</a></li>
+			 	<li class="nav-item"><a class="nav-link" role="tab" href="#tab_css2" data-toggle="tab">CSS</a></li>
+			</ul>
+			<div class="tab-content">
+			<div id="tab_preview2" class="tab-pane fade show active p-3 bg-white border-right border-bottom border-left" role="tabpanel">
+			<ul id="myAccordionWithToggle" class="mj_accordion">
+			 	<li>
+			<div class="mj_accordion_item active">Accordion Item #1</div>
+			<div class="mj_accordion_content active">Content 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit autem sequi perferendis asperiores quidem id sunt officiis molestias nobis. Sint, veritatis, quis voluptates totam sed quod quidem placeat iusto.</div></li>
+			 	<li>
+			<div class="mj_accordion_item">Accordion Item #2</div>
+			<div class="mj_accordion_content">Content 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nesciunt, accusantium, ad nam officia illum officiis accusamus veniam similique eligendi laborum saepe sed beatae dolores totam suscipit quis corporis qui.</div></li>
+			 	<li>
+			<div class="mj_accordion_item">Accordion Item #3</div>
+			<div class="mj_accordion_content">Content 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem, aspernatur iure enim consequatur delectus et nam ratione laboriosam commodi id doloribus dicta odio a nemo numquam consectetur eligendi officia.</div></li>
+			</ul>
+			</div>
+			<div id="tab_html2" class="tab-pane fade p-3 bg-white border-right border-bottom border-left" role="tabpanel">
+<pre>&lt;ul class="mj_accordion" id="myAccordionWithToggle"&gt;
+    &lt;li&gt;
+        &lt;div class="mj_accordion_item active"&gt;Accordion Item #1&lt;/div&gt;
+        &lt;div class="mj_accordion_content active"&gt;Content 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit autem sequi perferendis asperiores quidem id sunt officiis molestias nobis. Sint, veritatis, quis voluptates totam sed quod quidem placeat iusto.&lt;/div&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+        &lt;div class="mj_accordion_item"&gt;Accordion Item #2&lt;/div&gt;
+        &lt;div class="mj_accordion_content"&gt;Content 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nesciunt, accusantium, ad nam officia illum officiis accusamus veniam similique eligendi laborum saepe sed beatae dolores totam suscipit quis corporis qui.&lt;/div&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+        &lt;div class="mj_accordion_item"&gt;Accordion Item #3&lt;/div&gt;
+        &lt;div class="mj_accordion_content"&gt;Content 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem, aspernatur iure enim consequatur delectus et nam ratione laboriosam commodi id doloribus dicta odio a nemo numquam consectetur eligendi officia.&lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</pre>
+			</div>
+			<div id="tab_javascript2" class="tab-pane fade p-3 bg-white border-right border-bottom border-left" role="tabpanel">
+<pre>&lt;script type="text/javascript"&gt;
+$(function(){
+    $('#myAccordionWithToggle').mjAccordion({toggle:true});
+});
+&lt;/script&gt;</pre>
+			</div>
+			<div id="tab_css2" class="tab-pane fade p-3 bg-white border-right border-bottom border-left" role="tabpanel">
+<pre>.mj_accordion {padding:0; margin:0 0 .5em;}
+.mj_accordion &gt; li {list-style:none;}
+.mj_accordion &gt; li:first-child .mj_accordion_item {margin-top:0;}
+.mj_accordion .mj_accordion_item {cursor:pointer; color:#333; background:#f5f5f5; border:1px solid #ddd; padding:10px 15px; -webkit-border-radius:3px; border-radius:3px; font-size:16px; margin-top:.3em;}
+.mj_accordion .mj_accordion_item:hover {background:#eee;}
+.mj_accordion .mj_accordion_item.active {border-bottom:none; -webkit-border-radius:3px 3px 0 0; border-radius:3px 3px 0 0;}
+.mj_accordion .mj_accordion_content {padding:15px; border:1px solid #ddd; display:none; -webkit-border-radius:0 0 3px 3px; border-radius:0 0 3px 3px; background:#fff;}
+.mj_accordion .mj_accordion_content.active {display:block; height:inherit;}</pre>
+			</div>
+			</div></fieldset>
+	
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="mjAccordion/mjAccordion.js"></script>
+<script type="text/javascript">
+(function($){
+	$('#myAccordion').mjAccordion();
+	 $('#myAccordionWithToggle').mjAccordion({toggle:true});
+})(jQuery);
+</script>
+</body>
+</html>
