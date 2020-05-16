@@ -1,7 +1,7 @@
 /*
 	Author		: Michael Janea
 	Version		: 1.0
-	Author URL	: www.michaeljanea.byethost7.com
+	Author URL	: www.michaeljanea.me
 */
 
 (function($){
